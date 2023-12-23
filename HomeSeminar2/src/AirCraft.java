@@ -1,6 +1,6 @@
 public class AirCraft extends Vehicle implements Flyable {
-    int maxAltitude;
-    boolean isFlying;
+    private int maxAltitude;
+    private boolean isFlying;
 
 
     public AirCraft(int id, String brand, String model, int year, int maxAltitude,boolean isFlying) {
@@ -11,7 +11,7 @@ public class AirCraft extends Vehicle implements Flyable {
     private String isFly(boolean isFlying){
         String status = "На земле";
         if(isFlying){
-            return status = "В полёте";
+            status = "В полёте";
         }
         return status;
     }

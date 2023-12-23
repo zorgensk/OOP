@@ -1,10 +1,11 @@
 public class Boat extends Vehicle implements Swimmable {
     private int maxSpeed;
-    boolean isSailing;
+    private boolean isSailing;
 
     public Boat(int id, String brand, String model, int year, int maxSpeed, boolean isSailing) {
         super(id, brand, model, year);
         this.maxSpeed = maxSpeed;
+        this.isSailing = isSailing;
     }
 
     private String isDock(boolean isSailing) {
